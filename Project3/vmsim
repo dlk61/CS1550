@@ -1,0 +1,3 @@
+#!/bin/sh
+CLASS=$(basename $(grep -l 'public static void main' *.java) .java)
+java -Xmx4g $CLASS "$@"
